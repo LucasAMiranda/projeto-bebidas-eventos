@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-y: hidden;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+}
+
+.header-mobile, .header-desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 5px;
+  background-color: white;
+  width: 100%;
+}
+
+.header-mobile nav{
+  display: flex;
+  gap: 1rem;
+}
+
+main {
+  display: flex;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+  
+  background-image: url(img/fundo.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  position: relative;
+  padding-inline: 1rem;
+}
+
+main .container-contato {
+  width: 60%;
+  height: 80%;
+  background-color: rgba(200, 200, 200);
+  opacity: 0.8;
+  border-radius: 20px;
+  font-size: 1.3rem;
+}
+
+main .container-contato {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: rgba(255, 255, 255, 255);
+}
+
+main .container-contato .contatos {
+  width: 100%;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  padding-inline: 2rem;
+  gap: 15%;
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-block: 1rem;
+  height: 20%;
+}
+
+footer h2 {
+  color: white;
+  text-align: center;
+}
+
+footer .icons-social  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+@media (max-width: 600px) {
+  #home-link, #nossas-redes, .header-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) {
+  .header-mobile {
+    display: none;
+  }
+
+  .header-desktop {
+    padding-right: 8rem;
+    padding-left: 2rem;
+    
+    justify-content: space-between;
+  }
+
+  .header-desktop {
+    gap: 120px;
+  }
+
+  .header-desktop a {
+    padding-bottom: 3px;
+  }
+
+  .header-desktop a:hover {
+    border-bottom: 1px solid black;
+  }
+
+  /* #select-tag {
+    border-bottom: 1px solid black;
+  } */
+}

@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+
+
+a {
+text-decoration: none;
+color: black;
+font-size: 1.3rem;
+}
+
+.header-mobile, .header-desktop {
+padding-bottom: 200px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-right: 5px;
+background-color: white;
+width: 100%;
+}
+
+.header-mobile nav{
+display: flex;
+gap: 1rem;
+}
+/* Estilo para as linhas */
+.section-row {
+    display: flex;
+    justify-content: center; /* Centraliza os contêineres na horizontal */
+    margin-bottom: 100px; /* Espaçamento entre as linhas */
+    padding-top: 20px;
+}
+
+/* Estilo para os cards */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilo para o conteúdo do card */
+.card-content {
+    margin-top: 10px;
+}
+
+
+/* Estilo para o footer */
+footer {
+    position: relative;
+    background-color: black;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    top:0;
+    
+     
+}
+
+/* Estilo para os ícones sociais */
+footer .icons-social {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os ícones sejam envolvidos para a próxima linha se não houver espaço suficiente */
+    gap: 1rem;
+      align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+   
+}
+
+/* Estilo para os links de ícones sociais */
+.icons-social a {
+    display: flex; /* Para garantir que os ícones sociais mantenham sua forma de bloco */
+}
+
+/* Estilo para a imagem do logo */
+.sid-logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-height: 100%; /* Garante que a imagem não ultrapasse a altura do footer */
+}
+
+
+@media (max-width: 600px) {
+#home-link, #nossas-redes, .header-desktop {
+    display: none;
+}
+}
+
+@media (min-width: 600px) {
+.header-mobile {
+    display: none;
+}
+
+.header-desktop {
+    padding-right: 8rem;
+    padding-left: 2rem;
+    
+    justify-content: space-between;
+}
+
+.header-desktop {
+    gap: 120px;
+}
+
+.header-desktop a {
+    padding-bottom: 3px;
+}
+
+.header-desktop a:hover {
+    border-bottom: 1px solid black;
+}
+}
